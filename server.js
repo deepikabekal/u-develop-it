@@ -66,7 +66,7 @@ app.get('/api/candidate/:id', (req, res) => {
 
 
 
-//query fro deleting a candidate
+//query for deleting a candidate
 app.delete('/api/candidate/:id', (req, res) => {
     const sql = `DELETE FROM candidates WHERE id = ?`;
     const params = [req.params.id];
